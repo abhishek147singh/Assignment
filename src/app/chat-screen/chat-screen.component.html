@@ -1,0 +1,5 @@
+<div class="header">
+    <h1>Conversation</h1>
+    <app-search-bar (getDataFromSearch)="getDataFromsearch($event)" ></app-search-bar>
+</div>
+<app-chat-list *ngIf="conversationdata !== undefined" [chatlistData]="conversationdata.FriendList" ></app-chat-list>

@@ -1,0 +1,18 @@
+<div class="profile" *ngIf="userdata !== undefined">
+    <div class="profile-details">
+        <h1 class="shadow-color">Hello,</h1>
+        <h1>{{userdata.Name}}</h1>
+    </div>
+    <a routerLink="/profile">
+        <div class="profile-image">
+            <img *ngIf = "userdata.ProfileImage !== undefined else elseBlock" src="{{userdata.ProfileImage}}" alt="profile-image"/>
+            <ng-template #elseBlock>
+                <img src="./../../assets/profileImg.jpg" alt="profile-image"/>
+            </ng-template>
+        </div>
+    </a>
+</div>
+<app-search-bar></app-search-bar>
+<app-vertical-list *ngIf="userdata !== undefined" [listData]="userdata.FriendList" ></app-vertical-list>
+<app-post-list *ngIf="postdata !== undefined" [postsData]="postdata"></app-post-list>
+<button class="page-btn" (click)="loadPosts()"> more...</button>

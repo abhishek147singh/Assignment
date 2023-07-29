@@ -1,0 +1,7 @@
+<div class="photo-list">
+    <div class="photo-group1" *ngFor="let group of photoList">
+        <div class="{{element.className}}" *ngFor="let element of group">
+            <img src="{{element.imgPath}}" alt="image"/>
+        </div>
+    </div>
+</div>

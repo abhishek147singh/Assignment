@@ -1,0 +1,40 @@
+.list {
+    width: 100%;
+    height: calc(100vh - 190px);
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+.list::-webkit-scrollbar {
+    width: 0;
+}
+
+.chat-card {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.card-profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chat-card > div {
+    margin-left: 10px;
+}
+
+.shadow-color {
+    color: rgb(182, 190, 199);
+}

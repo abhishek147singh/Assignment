@@ -1,0 +1,50 @@
+.My-Profile{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myProfile-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.myProfile-container .image-container{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 50%;
+    border:1px solid lightpink;
+    overflow: hidden;
+}
+
+.myProfile-container .image-container img{
+    width: 100%;
+}
+
+.myProfile-container .text-details{
+    text-align: center;
+}
+
+.myProfile-container .text-details p{
+    color: lightgray;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .item{
+    margin: 10px;
+    text-align: center;
+    padding: 8px;
+}
+.row .item h3{
+    color: rgb(189, 182, 182);
+}

@@ -1,0 +1,11 @@
+<div class="list">
+    <div class="chat-card" *ngFor="let item of chatlistData">
+        <div class="card-profile-image">
+            <img src="{{item.ProfileImage}}" alt="profile-image" />
+        </div>
+        <div>
+            <h3>{{item.Name}}</h3>
+            <p class="shadow-color">{{item.LastMessage}}</p>
+        </div>
+    </div>
+</div>

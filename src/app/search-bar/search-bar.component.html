@@ -1,0 +1,8 @@
+<div class="search-box">
+    <div class="button">
+        <span>
+            <i class="fa fa-search"></i>
+        </span>
+    </div>
+    <input type="text" (input)="getDataFromSearch.emit(search.value)" #search placeholder="Search.." name="search">
+</div>

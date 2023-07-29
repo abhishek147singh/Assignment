@@ -63,7 +63,8 @@
               "browserTarget": "Assignment:build:production"
             },
             "development": {
-              "browserTarget": "Assignment:build:development"
+              "browserTarget": "Assignment:build:development",
+              "proxyConfig": "./src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

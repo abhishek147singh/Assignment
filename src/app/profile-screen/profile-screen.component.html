@@ -1,0 +1,27 @@
+<div class="My-Profile" *ngIf="profiledata !== undefined">
+    <h1>My Profile</h1>
+    <div class="myProfile-container">
+         <div class="image-container">
+            <img src="../../assets/profileImg.jpg" alt="profile-image">
+         </div>
+         <div class="text-details">
+            <h2>{{profiledata.Name}}</h2>
+            <p>{{profiledata.Description }}, {{profiledata.Location}}</p>
+         </div>
+         <div class="row">
+            <div class="item">
+                <h3>Photos</h3>
+                <h4>{{profiledata.PhotosCount}}</h4>
+            </div>
+            <div class="item">
+                <h3>Followers</h3>
+                <h4>{{profiledata.FollowersCount}}</h4>
+            </div>
+            <div class="item">
+                <h3>Follows</h3>
+                <h4>{{profiledata.FollowsCount}}</h4>
+            </div>
+         </div>   
+    </div>
+</div>
+<app-photo-list *ngIf="profiledata !== undefined" [photoListData]="profiledata.PhotoList" ></app-photo-list>
